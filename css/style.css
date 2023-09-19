@@ -219,6 +219,7 @@ a {
 }
 
 .card-title {
+    font-weight: 700;
     font-size: 16px;
     object-fit: cover;    
 }
@@ -233,6 +234,12 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
+
+.show-more
+{
+    margin-top: 50px;
+    margin-left: 20px;
+}
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;    
@@ -257,6 +264,15 @@ a {
 
 .hebergement-cards .fa-star
 {
+    margin : -1px;
+}
+.hebergement-cards  .card-subtitle
+{
+    margin-top:-10px;
+}
+.hebergement-cards .card-content
+{
+    margin-left: 10px;   
 }
 
 /****** Hebergements ***********/
