@@ -396,8 +396,16 @@ footer
 {    
 display: flex;
 align-items: flex-start;
+flex-direction: row;
 align-self: stretch;
 background: var(--Grey, #F2F2F2);
+}
+footer .a-propos, .nos-hebergements, .assistance
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 200px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
