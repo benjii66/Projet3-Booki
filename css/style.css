@@ -377,6 +377,8 @@ a {
     width : 298px;
     height: 439px;
     border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+
 }
 
 .activites-card h2
@@ -394,18 +396,24 @@ a {
 
 footer 
 {    
-display: flex;
-align-items: flex-start;
-flex-direction: row;
-align-self: stretch;
-background: var(--Grey, #F2F2F2);
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    background: var(--Grey, #F2F2F2);
+    line-height: 230%;
 }
-footer .a-propos, .nos-hebergements, .assistance
+footer .a-propos
 {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    padding-left: 200px;
+    padding-left: 50px;
+}
+
+.nos-hebergements, .assistance
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
