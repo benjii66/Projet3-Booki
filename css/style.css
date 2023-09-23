@@ -360,7 +360,11 @@ a {
     align-self: stretch;
 }
 
-
+.activites-title
+{
+    padding:30px;
+    margin-bottom: -30px;
+}
 .activites-card
 {
     display: flex;
