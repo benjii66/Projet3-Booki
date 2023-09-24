@@ -439,7 +439,7 @@ footer
         padding-top: 4%;
     }
 
-    .zebi
+    .booki-title
     {
         font-size: 32px;
     }
@@ -521,14 +521,10 @@ footer
         display: flex;
         margin-top: 5%;
         gap:20%;
-        padding-bottom: 20%;
         padding-right: 21%;
+        width: 11.6%;
     }
-    .activites img 
-    {
-        width: 386.9px;
-        height: 300px;  
-    }
+ 
 
     /*footer*/   
 
