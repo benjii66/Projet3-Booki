@@ -395,23 +395,31 @@ a {
 /* footer */
 footer 
 {    
-    display: flex;
     background: var(--Grey, #F2F2F2);
     line-height: 230%;
 }
-footer .a-propos
+.footer-content 
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-left: 50px;
+
+    justify-content: space-between;
 }
 
-.nos-hebergements, .assistance
+.a-propos, .nos-hebergements, .assistance
 {
     display: flex;
     flex-direction: column;
-    padding-left: 300px;
+    gap : 15px;
 }
+
+.assistance
+{
+    margin-right: 200px;
+
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /*1024 à 1440px*/
@@ -514,23 +522,26 @@ footer .a-propos
         margin-top: 5%;
         gap:20%;
         padding-bottom: 20%;
+        padding-right: 21%;
     }
     .activites img 
     {
-        width: 130%;
-        height: 100%;  
-        object-fit: cover;
+        width: 386.9px;
+        height: 300px;  
     }
 
-    /*footer*/
-    
+    /*footer*/   
 
-    .footer .a-propos, .nos-hebergements, .assistance
+    .footer-content,.a-propos, .nos-hebergements, .assistance
     {
-        display:flex;
+        display: flex;
+        padding-left: 20%;
         flex-direction: column;
-        justify-content: flex-start;
     }
+
+    
+   
+
 
 }
 
