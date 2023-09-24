@@ -30,15 +30,26 @@
     justify-content:space-between;
 }
 
-.menu img 
+.menu-img 
 {
+    display:flex;
+    justify-content:space-between;
     padding-bottom: 6%;
     padding-top: 2%;
     width : 7%;
 }
 
-.blue-bar :hover
+.blue-bar
 {
+    margin-left: 95%;
+    margin-top: -15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.blue-bar :hover
+{    
     color : var(--main-color);
     border-top: 2px solid var(--main-color);
     padding-top:13%;
@@ -545,20 +556,150 @@ footer
 @media (max-width: 767.98px) {
     /* ... */
 
-     /*Menu
-     .menu img
-     {
-         width: 20%;
-         margin-left: -20%;
-     }
- 
-     .blue-bar :hover
-     {
-         padding-top: 4%;
-     }
- 
-     .zebi
-     {
-         font-size: 32px;
-     }*/
+    /*menu*/
+    .menu-img 
+    {
+        display: flex;
+        padding-left: 30%;
+        width: 30%;
+        align-items: flex-start;
+    }
+
+    .blue-bar 
+    {
+        display: flex;
+        margin-top: 10%;
+        margin-left: 5%;
+        font-size : 30px;
+        border-bottom: 2px solid var(--filter-bg-color);
+        
+    }
+
+    .blue-bar :hover
+    {
+        border-bottom: 2px solid var(--main-color);
+        /*Padding issue*/
+        padding-bottom:4%;
+        border-top: none;
+
+    }
+
+    /*form*/
+
+    .search-bar 
+    {
+        margin-left: 0.5%;
+    }
+
+    .search-button 
+    {
+        visibility: visible; /*turn into hidden*/
+    }
+
+    .search-button:after 
+    {
+        visibility: visible; /*turn into visible*/
+        background-color: var(--main-color);
+        color:white;
+        height: 53.5px;
+        padding: 15px;
+        border-radius: 0px 15px 15px 0px;
+        border: 1px solid var(--Blue, #0065FC);
+        content: '\f217';
+    }
+
+
+    /*Filters
+    
+    Display in 4 : 
+
+    First      Second
+    
+    Third      Fourth
+    */
+
+
+    .info p
+    {
+        font-size: 22px;
+    }
+  
+
+    /*Hebergements and populaires*/
+  
+    .hebergements-and-populaires 
+    {
+        flex-direction: column-reverse; 
+        margin-left: -15%;
+        width:130%;
+    }
+
+    .hebergements
+    {
+        background-color: white;
+        margin-top: 10%;
+    }
+
+    .populaires
+    {
+        background-color: gray;
+    }
+
+    .hebergements .card 
+    {
+        /*got an issue with the cards here,
+         never the same size in percentage 
+         I even don't have the precise size in pixels (-10px in code)
+         */
+        width : 539.69px;   
+    }
+
+    
+  
+
+    /*Activites*/
+    .activites
+    {
+        display: flex;
+        margin-left:-13%;
+        margin-top: 5%;
+        gap:20%;
+        padding-right: 21%;
+        height: 10%;
+
+    }
+    .activites-title
+    {
+        margin-left: -10%;
+        font-size : 30px;
+    }
+
+    .activites-card 
+    {
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        gap:20%;
+        padding-right: 21%;
+        width: 92%;
+    }
+
+    .activites-card img 
+    {
+        /*Pomegues image issue*/
+        object-fit: cover;
+        width : 122.9%;
+        height: 60%;
+    }
+    .activites-card h2 
+    {
+        display: flex;
+        padding-top: 2%;
+        padding-left: 20%;
+        font-size: 150%;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
 }
