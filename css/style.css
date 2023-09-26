@@ -5,20 +5,17 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
 .center-alignement
 {
     display:flex;
     align-items: center;
     justify-content: center;
 }
-
 .fa-solid {
     color: var(--main-color);
 }
@@ -29,7 +26,6 @@
     display:flex;
     justify-content:space-between;
 }
-
 .menu-img 
 {
     display:flex;
@@ -38,7 +34,6 @@
     padding-top: 2%;
     width : 7%;
 }
-
 .blue-bar
 {
     margin-left: 95%;
@@ -47,7 +42,6 @@
     justify-content: space-between;
     align-items: flex-end;
 }
-
 .blue-bar :hover
 {    
     color : var(--main-color);
@@ -66,16 +60,15 @@ h1
 {
     margin-left:-5px;
 }
-
 p 
 {
     font-size: 130%;
 }
-
 body 
 {
     display: flex;
     justify-content: center;
+    margin:0;
 }
 
 /**form section**/
@@ -83,7 +76,6 @@ form
 {
     display: flex;
 }
-
 .search-bar
 {
     display: flex;
@@ -92,7 +84,6 @@ form
     align-items: center;
     gap: 24px;
 }
-
 .search-bar i 
 {
     color: black;
@@ -103,7 +94,6 @@ form
     width:60px;
     position: absolute;
 }
-
 .search-bar input
 {
     font-size:18px;
@@ -113,7 +103,6 @@ form
 
 
 /**need help to the border when active**/
-
 .search
 {
     border-radius: 15px;
@@ -124,8 +113,6 @@ form
     margin-right: -20px;
     padding: 1.5px;   
 }
-
-
 .search-button
 {
     position: relative;
@@ -143,34 +130,30 @@ form
     display: flex; 
     margin-top: 20px;  
 }
-
 .filters h2
 {
     margin-top: 40px;
     flex-direction: row;
 }
-
 .filters section 
 {
     display: flex; 
-    margin-top: 20px; 
+    margin-top: 30px; 
 }
-
 .filters a
 {    
     width : 180px;
+    height: 40px;
     font-size:18px;
     font-weight: 700;
     border-radius: 40px;
     margin-left: 20px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);   
 }
-
 .filters section :hover
 {
     background-color: #DEEBFF;
 }
-
 .filters i
 {
     text-align: center;  
@@ -214,7 +197,6 @@ a {
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
 .hebergements .card
 {
     display: flex;
@@ -231,7 +213,6 @@ a {
     font-size: 16px;
     object-fit: cover;    
 }
-
 
 .euro {
     font-weight: 700;
@@ -253,7 +234,6 @@ a {
     justify-content: space-between;    
 }
 
-
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -270,13 +250,28 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.hebergement-cards .card-title
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
 .hebergement-cards .fa-star
 {
     margin : -1px;
 }
 .hebergement-cards  .card-subtitle
 {
-    margin-top:-10px;
+    margin-top:5px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.hebergement-cards .card-rating
+{
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 .hebergement-cards .card-content
 {
@@ -304,14 +299,12 @@ a {
     margin-top: 33px;   
 }
 
-
 .hebergements .card
 {
     display:flex;
     align-items: flex-start;
     
 }
-
 .hebergement-cards img
 {
     height: 140px;
@@ -355,10 +348,13 @@ a {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-size: 18px;
+
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    font-size: 16px;
 }
 
 .populaires-cards .card-rating {
@@ -402,7 +398,6 @@ a {
     font-size: 16px;
 }
 
-
 /* footer */
 footer 
 {    
@@ -414,7 +409,6 @@ footer
     display: flex;
     flex-direction: row;
     padding-left: 50px;
-
     justify-content: space-between;
 }
 
@@ -422,15 +416,12 @@ footer
 {
     display: flex;
     flex-direction: column;
-    gap : 15px;
 }
 
 .assistance
 {
     margin-right: 200px;
-
 }
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /*1024 à 1440px*/
@@ -444,21 +435,20 @@ footer
         width: 20%;
         margin-left: -5%;
     }
-
+    .blue-bar
+    {
+        margin-left: 64%;
+    }
     .blue-bar :hover
     {
         padding-top: 4%;
     }
-
     .booki-title
     {
         font-size: 32px;
     }
     /*Search Bar*/
-    .search-bar
-    {
-        margin-left: -5%;
-    }
+ 
 
     /*Filters*/
     .filters
@@ -466,7 +456,6 @@ footer
         display: flex;
         margin-top: 10px;
     }
-
     .filters section
     {
         flex-flow: column;
@@ -477,14 +466,12 @@ footer
         margin-top: 90px;
         margin-left: 20px;
     }
-
     .info p
     {
         font-size: 15px;
     }
 
     /*Hebergements*/
-
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -521,35 +508,26 @@ footer
     .activites
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        margin-left:-1%;
         width: 100%;
     }
-
     .activites-card
     {
         display: flex;
         margin-top: 5%;
         gap:20%;
-        padding-right: 21%;
+        padding-right: 27.8%;
         width: 11.6%;
-    }
- 
+    } 
 
-    /*footer*/   
-
+    /*footer*/  
     .footer-content,.a-propos, .nos-hebergements, .assistance
     {
         display: flex;
         padding-left: 20%;
         flex-direction: column;
     }
-
-    
-   
-
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -575,10 +553,10 @@ footer
         
     }
 
+    /*Padding issue*/
     .blue-bar :hover
     {
         border-bottom: 2px solid var(--main-color);
-        /*Padding issue*/
         padding-bottom:4%;
         border-top: none;
 
@@ -617,16 +595,13 @@ footer
     
     Third      Fourth
     */
-
-
     .info p
     {
         font-size: 22px;
     }
   
 
-    /*Hebergements and populaires*/
-  
+    /*Hebergements and populaires*/  
     .hebergements-and-populaires 
     {
         flex-direction: column-reverse; 
@@ -645,12 +620,12 @@ footer
         background-color: gray;
     }
 
+    /*got an issue with the cards here,
+     never the same size in percentage 
+     I even don't have the precise size in pixels (-10px in code)
+     */
     .hebergements .card 
     {
-        /*got an issue with the cards here,
-         never the same size in percentage 
-         I even don't have the precise size in pixels (-10px in code)
-         */
         width : 539.69px;   
     }
 
@@ -684,9 +659,9 @@ footer
         width: 92%;
     }
 
+    /*Pomegues image issue*/
     .activites-card img 
     {
-        /*Pomegues image issue*/
         object-fit: cover;
         width : 122.9%;
         height: 60%;
