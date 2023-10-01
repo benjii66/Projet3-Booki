@@ -419,7 +419,7 @@ footer
 @media (max-width: 1024px) {
 
     body {
-        margin-left :-4%;
+        margin-left :-2%;
     }
     /*Menu*/
     .menu-img {
@@ -467,7 +467,7 @@ footer
     }
     /*populaires*/
     .populaires {
-        width: 105%;
+        width: 100%;
         margin-top: 50px;
     }
     .populaires-cards {
@@ -492,19 +492,22 @@ footer
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-left: -4%;
         width: 25%;
-        height: 25%;
+        height: 45%;
         gap:17%;
+        margin-bottom: 4%;
     }
     .activites-card {
         margin-left: -8%;
         display: fill;
         margin-top: 5%;
-        padding-right: 5%;
+        padding-right: 7%;
         width: 90%;
     } 
     .activites img {
         width:230px;
+        height : 250px;
     }
 }
 
@@ -512,7 +515,7 @@ footer
 @media (max-width: 767.98px) {
     /* ... */
     body{
-        margin-left: 4%;
+        margin-left: 5%;
     }
     /*menu*/
     .menu-img 
@@ -604,7 +607,8 @@ footer
     }
     .info p
     {
-        font-size: 30px;
+        margin-top: 20%;
+        font-size: 200%;
         margin-left: -10%;
     }  
     .info i
@@ -644,6 +648,7 @@ footer
     }
     .hebergements .card 
     {
+        /*width issue*/
         width : 539.69px;
         height: 300px;
     }  
@@ -672,12 +677,12 @@ footer
         margin-top: 5%;
         margin-bottom: 35%;
         padding-right: 360%;
-        width: 87.3%;
+        width: 88%;
     }  
     .activites-card img 
     {
         object-fit: cover;
-        width : 546.875px;
+        width : 704px;
         height: 281.109px;
     }
     .activites-card h2 
