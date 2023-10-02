@@ -26,14 +26,15 @@
     display:flex;
     justify-content:space-between;
 }
+
+/*margin issue*/
 .menu-img 
 {
-    display:flex;
-    justify-content:space-between;
     padding-bottom: 6%;
     padding-top: 2%;
     width : 7%;
 }
+
 .blue-bar
 {
     margin-left: 80%;
@@ -61,11 +62,13 @@ p
 {
     font-size: 130%;
 }
+
 body 
 {
     display: flex;
     justify-content: center;
     margin:0px;
+    margin-top: -0.9%;
 }
 
 /**form section**/
@@ -418,6 +421,7 @@ footer
 /* Medium devices (tablets, less/equal than 1024px)  */
 @media (max-width: 1024px) {
 
+    /*margin issue*/
     body {
         margin-left :-2%;
     }
@@ -430,7 +434,7 @@ footer
         font-size: 25px;
     }
     .blue-bar :hover {
-        padding-top: 4%;
+        padding-top: 14.5%;
     }
     .booki-title {
         font-size: 32px;
@@ -462,12 +466,14 @@ footer
     .hebergements-and-populaires {
         flex-direction: column;
     } 
+
+    /*width issue*/
     .hebergements {
-        width: 105%;
+        width: 107%;
     }
     /*populaires*/
     .populaires {
-        width: 100%;
+        width: 107%;
         margin-top: 50px;
     }
     .populaires-cards {
@@ -487,12 +493,11 @@ footer
         font-size: 13px;
     }
     /*activites*/
-    /*réduire taille card  et recentrer le tout*/
     .activites  {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: -4%;
+        margin-left: -1%;
         width: 25%;
         height: 45%;
         gap:17%;
@@ -538,23 +543,25 @@ footer
     .blue-bar 
     {
         display: flex;
-        margin-left: -20%;
+        margin-left: -15%;
         padding-right: 70%;
         margin-top: 10%;
         font-size : 30px;
-        border-bottom: 2px solid var(--filter-bg-color);        
+        border-bottom: 2px solid var(--filter-bg-color);  
     }
 
     .blue-bar a {
         margin-left: 25%;
     }
+
     /*Padding issue    
-    OH JE FAIS COMMENT LA BARRE LA 
+    How should I do for the blue bar ?
+    It's stucked on the text and add a padding-bottom make everything move
     */
     .blue-bar :hover
     {
         border-bottom: 2px solid var(--main-color);
-        border-top: none;        
+        border-top: none;  
     }
 
     /*form*/
@@ -568,7 +575,7 @@ footer
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 500px;
+        width: 650px;
     }  
     .search-button 
     {
@@ -589,6 +596,8 @@ footer
         border: 1px solid var(--Blue, #0065FC);
         box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     }
+
+    /*Filters*/
     .filters h2 
     {
         margin-left: -10%;
@@ -598,13 +607,15 @@ footer
     {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap : 60px;
+        grid-gap : 90px;
     }
     .filters a 
     {
-        height : 150%;
-        width : 100%;
+        height : 180%;
+        width : 110%;
     }
+
+    /*Info*/
     .info p
     {
         margin-top: 20%;
@@ -646,12 +657,20 @@ footer
         display: flex;
         flex-flow: column;
     }
+
+    /*width issue due to the images*/
     .hebergements .card 
     {
-        /*width issue*/
         width : 539.69px;
         height: 300px;
     }  
+    .hebergement-cards
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .show-more
     {
         margin-left: 1%;
@@ -677,7 +696,7 @@ footer
         margin-top: 5%;
         margin-bottom: 35%;
         padding-right: 360%;
-        width: 88%;
+        width: 97.6%;
     }  
     .activites-card img 
     {
