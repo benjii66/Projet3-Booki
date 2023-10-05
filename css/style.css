@@ -382,9 +382,7 @@ footer {
 @media (max-width: 1024px) {
 
     /*margin issue*/
-    body {
-        margin-left :-2%;
-    }
+ 
     /*Menu*/
     .menu-img {
         width: 20%;
@@ -426,26 +424,36 @@ footer {
     /*Hebergements*/
     .hebergements-and-populaires {
         flex-direction: column;
+        width : 108%;
     } 
+    .hebergement-cards
+    {
+        padding: 0.1%;
+        width: 100%;
+    }
 
     /*width issue*/
     .hebergements {
-        width: 108%;
+        margin-left: -4%;
+        width: 100%;
     }
     /*populaires*/
     .populaires {
-        width: 107%;
+        margin-left: -4%;
+        width: 100%;
         margin-top: 50px;
     }
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        margin-left: -5%;
         margin-top: -2%;
-        gap : 5%;
+        gap : 2%;
     }
     .populaires-cards a {
-        width: 100%;
+        width: 30%;
     }
     .populaires-cards .card-title {
         font-size: 14px;
@@ -457,27 +465,32 @@ footer {
     .activites  {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin-left: -1%;
-        width: 25%;
-        height: 45%;
-        gap:17%;
-        margin-bottom: 4%;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: -3%;
+        margin-bottom: 3%;
     }
-    .activites-card {
-        margin-left: -8%;
-        display: fill;
-        margin-top: 5%;
-        padding-right: 7%;
-        width: 90%;
-    } 
+    .activites-card
+    {
+        height: 500px;
+    }
+ 
     .activites img {
-        width:230px;
-        height : 250px;
+        object-fit:cover;
+        width: 100%;
+        height: 85%;
+    }
+
+    footer
+    {
+        width: 1023px;
+        margin-left: -5.5%;
     }
 }
 
 /* Small devices (phones, less than 768px) */
+/*conseil à 375px*/
 @media (max-width: 767.98px) {
     /* ... */
     body{
