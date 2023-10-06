@@ -584,14 +584,17 @@ footer {
     /*Info*/
     .info p {
         margin-top: 20%;
-        font-size: 100%;
-        margin-left: -10%;
-        width:140%;
+        font-size: 110%;
+        width:120%;
+        margin-bottom: -10%;
+        margin-top: 20%;
+
     }  
     .info i {
        height: 30px;
        width: 30px;
        font-size: 20px; 
+       margin-left: -12%;
     } 
 
     /*Hebergements and populaires*/  
@@ -609,7 +612,8 @@ footer {
         background-color: white;
         margin-top: 10%;
         filter:unset;
-    }
+        width: 385px;
+    }  
     .hebergements img {
         height: 70%;
     }
@@ -623,16 +627,28 @@ footer {
         flex-flow: column;
     }
 
+    .populaires .card
+    {
+        display: flex;
+        justify-content: center;
+        width: 310%;
+        margin-left: -110%;
+        margin-bottom: -20%;
+    }
+
     /*width issue due to the images*/
     .hebergements .card {
-        width : 539.69px;
+        display: flex;
+        width : 320px;
         height: 300px;
+        margin-left: -25%;
     }  
     .hebergement-cards {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 150%;
     }
     .show-more {
         margin-left: 1%;
@@ -642,37 +658,35 @@ footer {
     .activites {
         display: flex;
         flex-direction: column;
-        margin-left:-13%;
+        margin-left:-18%;
         margin-top: 5%;
-        padding-right: 21%;
+        padding: 0%;
+        width: 136%;
     }
     .activites-title {
-        margin-left: -10%;
-        font-size : 30px;
+        margin-left: -20%;
+        font-size : 170%;
     }
     .activites-card {
         display: flex;
         margin-top: 5%;
-        margin-bottom: 35%;
-        padding-right: 360%;
         width: 97.6%;
+        height : 10%;
     }  
     .activites-card img {
         object-fit: cover;
-        width : 704px;
-        height: 281.109px;
+        width : 365px;
+        height: 200px;
     }
     .activites-card h2 {
         display: flex;
-        padding-top: 2%;
-        padding-left: 5%;
         font-size: 150%;
     }
     
     /*FOOTER*/
     footer {
-        width: 800px;
-        margin-left: -15%;
+        width: 135.5%;
+        margin-left: -18%;
     }
     .footer-content {
         display: flex;
@@ -681,7 +695,7 @@ footer {
     .a-propos, .nos-hebergements, .assistance {
         display: flex;
         flex-direction: column;
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 100%;
+        margin-left: -10%;
     }
 }
