@@ -493,56 +493,59 @@ footer {
 /*conseil à 375px*/
 @media (max-width: 767.98px) {
     /* ... */
-    body{
-        margin-left: 5%;
-    }
-    /*menu*/
+     /*menu*/
     .menu-img {
         display: flex;
+        margin-top: 10%;
         padding-left: 32%;
         width: 30%;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
-    .booki-title {
-        font-size: 40px;
-        margin-left: -10%;
-    }
-    .booki-subtitle {
-        font-size : 25px;
-        margin-left: -10%;
-    }
-    .blue-bar {
-        display: flex;
-        margin-left: -15%;
-        padding-right: 70%;
-        margin-top: 10%;
-        font-size : 30px;
-        border-bottom: 2px solid var(--filter-bg-color);  
-    }
-
-    .blue-bar a {
-        margin-left: 25%;
-    }
-
     /*Padding issue    
     How should I do for the blue bar ?
     It's stucked on the text and add a padding-bottom make everything move
     */
-    .blue-bar :hover {
+    .blue-bar {
+        display: flex;
+        align-items: center;
+        margin-left: -5%;
+        margin-top: 10%;
+        font-size : 120%;
+    }
+    .blue-bar
+    {
+        display: flex;
+        border-bottom: 2px solid var(--filter-bg-color);  
+
+    }
+    .blue-bar :hover
+    {
+        color : var(--main-color);
         border-bottom: 2px solid var(--main-color);
         border-top: none;  
     }
+    .booki-title {
+        display: flex;
+        font-size: 158%;
+        width:90vw;
+        margin-left: -10%;
+    }
+    .booki-subtitle {
+        font-size : 110%;
+        width:90vw;
+        margin-left: -10%;
+    }     
 
     /*form*/
     .search-bar {
-        margin-left: -8%;
+        width: 305px;
+        margin-left: -15%;
         margin-top: 10%;
     }
-    .search {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 670px;
+    .search-bar input {
+        font-size: 140%;
+        width: 305px;
     }  
     .search-button {
         visibility: hidden;
@@ -570,18 +573,20 @@ footer {
     .filters section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap : 90px;
+        row-gap: 40%;
     }
     .filters a {
-        height : 180%;
-        width : 110%;
+        font-size: 80%;
+        height : 120%;
+        width : 150px;
     }
 
     /*Info*/
     .info p {
         margin-top: 20%;
-        font-size: 200%;
+        font-size: 100%;
         margin-left: -10%;
+        width:140%;
     }  
     .info i {
        height: 30px;
@@ -593,7 +598,12 @@ footer {
     .hebergements-and-populaires {
         flex-direction: column-reverse; 
         margin-left: -15%;
-        width:120%;
+        width:140%;
+        border-radius: none;
+
+    }
+    .hebergements-and-populaires section {
+        border-radius: 0px;
     }
     .hebergements {
         background-color: white;
