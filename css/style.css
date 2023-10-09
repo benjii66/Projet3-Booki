@@ -20,13 +20,20 @@
 .menu {
     display:flex;
     justify-content:space-between;
+    margin-top: -3%;
 }
 
 /*margin issue*/
 .menu-img {
+    margin-top: 2%;
     padding-bottom: 6%;
     padding-top: 2%;
-    width : 7%;
+    width :10%;
+}
+
+.menu-img img 
+{
+    width: 100%;
 }
 
 .blue-bar {
@@ -384,8 +391,13 @@ footer {
     /*margin issue*/
  
     /*Menu*/
-    .menu-img{
-        width: 20%;
+    .menu-img
+    {
+        margin-top: 3.3%;
+        width:10%;
+    }
+    .menu-img img{
+        width: 100%;
     }
     .blue-bar{
         margin-left: 60%;
@@ -495,33 +507,31 @@ footer {
         display: flex;
         margin-top: 10%;
         padding-left: 32%;
-        width: 30%;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom:0px;
+        width: 40%;
         justify-content: center;
         align-items: center;
     }
-    /*Padding issue    
-    How should I do for the blue bar ?
-    It's stucked on the text and add a padding-bottom make everything move
-    */
-    .blue-bar {
-        display: flex;
-        align-items: center;
+  
+    .blue-bar {      
         margin-left: -5%;
         margin-top: 10%;
         font-size : 120%;
-    }
-    .blue-bar
-    {
-        display: flex;
-        border-bottom: 2px solid var(--filter-bg-color);  
-
+        border-bottom: 2px solid var(--filter-bg-color); 
     }
     .blue-bar :hover
     {
+        padding:0px;
+        padding-top: 0px;
+        padding-bottom: 15px;
         color : var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        border-top: none;  
+        border-spacing: 200%;
+        border-top: none;
     }
+  
     .booki-title {
         display: flex;
         font-size: 158%;
@@ -581,7 +591,7 @@ footer {
     /*Info*/
     .info p{
         margin-top: 20%;
-        font-size: 110%;
+        font-size: 125%;
         width:120%;
         margin-bottom: -10%;
         margin-top: 20%;
@@ -705,3 +715,13 @@ footer {
         margin-left: -10%;
     }
 }
+
+
+/**
+@media(min-width:1440px)
+{
+    body{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+}**/
