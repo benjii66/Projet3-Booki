@@ -35,7 +35,7 @@ nav li a:hover:before {
 	width: 100%;
 	position: absolute;
 	border-top: 3px solid var(--main-color);
-	top: 0;
+    top: 0;
 	left: 0
 }
 /************************ Main ************************/
@@ -370,9 +370,7 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 	/*margin issue*/
-	body {
-		margin-left: -6%
-    }
+	
 	nav ul {
 		margin-top: 1%
     }
@@ -385,13 +383,12 @@ footer {
     }
 	.filterSection {
 		justify-content: space-around;
-		padding: 0 20px
+        width: 820px;
     }
 	/*Hebergements*/
 	.hebergements-and-populaires{
 		flex-direction: column;
 		width : 112%;
-		margin-left: 7%
     }
 	/*width issue*/
 	#hebergements{
@@ -427,9 +424,7 @@ footer {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		width: 100%;
-		height: 100%;
-		margin-left: 5%
+		margin-left: -5%
     }
 	.activites-card{
 		height: 500px
@@ -440,7 +435,7 @@ footer {
 		height: 85%
     }
 	footer{
-		width: 113%
+		width: 100%
     }
 }
 /* Small devices (phones, less than 768px) */
@@ -501,7 +496,7 @@ footer {
 		width: 75%
     }
 	.buttonSearch span {
-		display: none
+		display: none /*hide the "Rechercher" text*/
     }
 	.buttonSearch i {
 		/* margin: 0 auto;
@@ -521,7 +516,7 @@ footer {
 		height: 100%
     }
 	.filterSection {
-		margin-left: -15%;
+		margin-left: -25%;
 		display: grid;
 		grid-template-columns: repeat(2, 20%);
 		row-gap: 20%;
@@ -580,7 +575,6 @@ footer {
 		width: 310%;
 		height: 200px;
 		margin-left: -110%;
-		padding-bottom: -20%;
     }
 	.populaires img{
 		margin-left: -8%;
@@ -599,7 +593,6 @@ footer {
 	/*width issue due to the images*/
 	#hebergements .card{
 		display: flex;
-		margin-left: -5%;
 		width : 650px;
 		height: 300px
     }   
@@ -636,8 +629,10 @@ footer {
 		display: flex;
 		flex-direction: column;
 		margin-top: 5%;
+        margin-left: 1%;
 		padding: 0%;
-		width: 100%
+		width: 100%;
+
     }
 	.activites-title{
 		font-size : 170%
@@ -645,13 +640,13 @@ footer {
 	.activites-card{
 		margin-top: 5%;
 		width: 100%;
-		height :100%
+		height :400px
     }
 	/*as usual fixed images because that's not the right size*/
 	.activites-card img{
 		object-fit: cover;
 		width : 100%;
-		height: 300px
+		height: 20px
     }
 	.activites-card h2{
 		display: flex;
@@ -664,6 +659,6 @@ footer {
 		height: 1%
     }
 	footer {
-		height: 11%
+		height: 12%
     }
 }
